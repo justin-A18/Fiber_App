@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Font -->
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+
+    <!-- icon -->
+
+    <link rel="icon" href="./Assets/code.svg">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="./css/normalize.css">
+
+    <link rel="stylesheet" href="./css/sing_up.css">
+
+    <!-- title -->
+
+    <title>Fiber | sign up</title>
+
+</head>
+
+<body>
+
+    <main class="container-principal">
+
+        <!-- Seccion izquierda-->
+
+        <div class="section-form">
+
+            <header class="form__logo">
+                <h1>Fiber</h1>
+            </header>
+
+            <form action="#" class="form__content">
+
+                <h2 class="form__title-principal">
+                    Create your Fiber account
+                </h2>
+
+                <div class="form__name column">
+                    <label for="name">Your Name</label>
+                    <input id="name" class="input" type="text" for="name" name="name" placeholder="John Doe">
+                    <span id="validar-caracteres"></span>
+                </div>
+
+                <div class="form__email column">
+                    <label for="email">E-mail</label>
+                    <input id="correo" class="input" type="email" form="email" name="email" placeholder="john@example.com">
+                    <span id="email-valido"></span>
+                </div>
+
+                <div class="form__password column">
+                    <label for="password">Password</label>
+                    <svg id="mostrar" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+                        <path d="M12 9a3.02 3.02 0 0 0-3 3c0 1.642 1.358 3 3 3 1.641 0 3-1.358 3-3 0-1.641-1.359-3-3-3z"></path>
+                        <path d="M12 5c-7.633 0-9.927 6.617-9.948 6.684L1.946 12l.105.316C2.073 12.383 4.367 19 12 19s9.927-6.617 9.948-6.684l.106-.316-.105-.316C21.927 11.617 19.633 5 12 5zm0 12c-5.351 0-7.424-3.846-7.926-5C4.578 10.842 6.652 7 12 7c5.351 0 7.424 3.846 7.926 5-.504 1.158-2.578 5-7.926 5z"></path>
+                    </svg>
+                    <input id="password" class="input" type="password" for="password" name="password" placeholder="At least 8 chracters">
+                </div>
+                
+                <span id="validar-contraseha"></span>
+                
+                <div class="form__checked">
+                    <input class="checked-input" type="checkbox" for="checkbox">
+                    <label for="checkbox" name="checkbox">
+                        By creating an account on Fiber, you agree to the 
+                        <a href="#">Terms & Conditions.</a>
+                    </label>
+                </div>
+
+                <div class="form__submit">
+                    <button id="submit" class="form__enviar">Create Fiber Account</button>
+                    <p class="form__sesion">
+                        Already have an account
+                        <a href="#" class="sesion-link">Sign in</a>
+                    </p>
+                </div>
+
+            </form>
+
+        </div>
+
+        <!-- Seccion derecha -->
+
+        <div class="section-image">
+            <figure class="image__descriptiva">
+                <img src="./Assets/Sign Up Image.png" alt="image-1">
+            </figure>
+
+            <article class="image__text">
+                <h2 class="text__title">Unparalleled Templates</h2>
+                <p class="text__paragraph">
+                    Crafted by team of professional designers, our templates are eunoaralleled in the market.
+                </p>
+            </article>
+        </div>
+
+    </main>
+
+    <script src="./js/app.js"></script>
+</body>
+
+</html>
