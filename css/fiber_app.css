@@ -393,7 +393,7 @@ img{
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
-        gap: 5rem;
+        gap: 2rem;
     }
 
     .portfolio__ilustration{
@@ -426,7 +426,12 @@ img{
 
     .create__rated{
         width: 80%;
-        margin-left: 8rem;
+        margin-left: 5rem;
+    }
+
+    .link__examples{
+        font-size: 1.3rem;
+        background-color: wheat;
     }
 }
 
