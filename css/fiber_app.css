@@ -469,7 +469,10 @@ img{
 @media (max-width: 400px) {
     .create__rated{
         width: 100%;
-        margin: 0;
+        margin-left: 2rem;
+        display: flex;
+        align-items: center;
+        gap: 0;
     }
 
     .rated__star{
