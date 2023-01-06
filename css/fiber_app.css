@@ -744,10 +744,10 @@ img{
         flex-direction: column;
         align-items: center;
         justify-content: center;
+        text-align: center;
     }   
 
     .text__paragraph{
-        text-align: center;
         padding: 0 10%;
     }
 
