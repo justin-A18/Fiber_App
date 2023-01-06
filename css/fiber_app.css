@@ -471,6 +471,18 @@ img{
         width: 100%;
         margin: 0;
     }
+
+    .rated__star{
+        width: 50%;
+    }
+
+    .rated__reviews{
+        width: 50%;
+    }
+
+    .rated__reviews p{
+        margin: 0;
+    }
 } 
 
 /* menu lateral */
