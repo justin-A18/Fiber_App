@@ -316,12 +316,12 @@ img{
     }
 
     .link__start{
-        font-size: 1.1rem;
-        padding: 1.5rem 3rem;
+        font-size: 1.3rem;
+        padding: 1.5rem 2.3rem;
     }
 
     .link__examples{
-        font-size: 1.1rem;
+        font-size: 1.5rem;
     }
 
     .flex{
@@ -357,6 +357,12 @@ img{
             -ms-flex-direction: column-reverse;
                 flex-direction: column-reverse;
         gap: 2rem;
+        margin-bottom: 5rem;
+    }
+
+    .create__rated{
+        width: 80%;
+        margin-left: 12rem;
     }
     
     .portfolio__create{
@@ -418,6 +424,10 @@ img{
         display: block;
     }
 
+    .create__rated{
+        width: 80%;
+        margin-left: 8rem;
+    }
 }
 
 /* menu lateral */
@@ -514,7 +524,235 @@ img{
     
 /* fin */
 
+/* Main Section Principal */
 
+.content-principal{
+    width: 100%;
+    height: 40rem;
+    padding: 0 10rem;
+}
 
+/* section empleabilidad*/
 
+.section__empleabilidad{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
 
+.empleabilidad__presentacion{
+    width: 50%;
+}
+
+.presetacion__inicio{
+    font-size: 2rem;
+    margin: 0;
+    color: var(--color-primary);
+}
+
+.presentacion__title{
+    font-size: 4rem;
+    margin: 2rem 0 5rem 0;
+}
+
+.empleabilidad__cards{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap:2rem;
+    flex-grow: 1;
+    width: 100%;
+}
+
+.card__paragraph{
+    font-size: 1.5rem;
+    line-height: 2.3rem;
+    color: #535353;
+}
+
+.card{
+    flex-basis: 30rem;
+    margin-bottom: 5rem;
+}
+
+@media (max-width: 970px){
+
+    .content-principal{
+        width: 100%;
+        height: 40rem;
+        padding: 0 5rem;
+    }
+
+    
+
+    .presetacion__inicio{
+        font-size: 1.5rem;
+        margin: 0;
+        color: var(--color-primary);
+    }
+
+    .presentacion__title{
+        font-size: 2.5rem;
+        margin: 2rem 0 5rem 0;
+    }
+
+    .card{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .card__paragraph{
+        text-align: center;
+        text-justify: center;
+        margin-top: .2rem;
+        padding: 0 1rem;
+    }
+}
+
+@media (max-width: 760px) { 
+    
+    .empleabilidad__presentacion{
+        width: 80%;
+    }
+
+    .empleabilidad__cards{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .card{
+        flex-basis: 20rem;
+    }
+
+    .card__paragraph{
+        padding: 0 18%;
+    }
+
+ }
+
+ @media (max-width: 500px) { 
+
+    .empleabilidad__presentacion{
+        width: 100%;
+    }
+
+    
+    .presentacion__title{
+        font-size: 2rem;
+        margin: 2rem 0 5rem 0;
+    }
+    
+    .card__paragraph{
+        padding: 0 10%;
+    }
+
+ }
+
+ /* section devesify */
+
+.section__divesify{
+    width: 100%;
+    display: flex;
+    flex-grow: 1;
+    background-color: var(--color-primary);
+    border-radius: 1rem;
+}
+
+.card__devesify{
+    display: flex;
+    align-items: center;
+}
+
+.devesify__text{
+    width: 50%;
+    padding-left: 4rem;
+}   
+
+.text__title{
+    color: #FFF;
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+.text__paragraph{
+    font-size: 2rem;
+    color: rgb(219, 219, 219);
+}
+
+.text__btn{
+    background-color: aliceblue;
+    border: thin solid transparent;
+    width: 13rem;
+    height: 4rem;
+    font-size: 1.5rem;
+    color: #4D13D1;
+    font-weight: 700;
+    border-radius: .5rem;
+}
+
+.text__btn:hover{
+    background-color: #9d7fe5;
+    color: white;
+    cursor: pointer;
+}
+
+.image__devesify{
+    width: 50%;
+    margin-bottom: 0;
+}
+
+@media (max-width: 970px){
+
+    .text__title{
+        color: #FFF;
+        font-size: 2.5rem;
+        margin: 0;
+    }
+
+    .text__paragraph{
+        font-size: 1.5rem;
+        color: rgb(219, 219, 219);
+    }
+
+    .text__btn{
+        background-color: aliceblue;
+        border: thin solid transparent;
+        width: 12rem;
+        height: 4rem;
+        font-size: 1.5rem;
+        color: #4D13D1;
+        font-weight: 700;
+    }
+
+}
+
+@media (max-width: 760px) { 
+    
+    .card__devesify{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .devesify__text{
+        width: 100%;
+        height: 30rem;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }   
+
+    .text__paragraph{
+        text-align: center;
+        padding: 0 10%;
+    }
+
+    .image__devesify{
+        width: 80%;
+        margin-bottom: 0;
+    }
+ }
