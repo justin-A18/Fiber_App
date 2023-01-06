@@ -435,6 +435,8 @@ img{
     }
 
     .check__Credit{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         gap: .8rem;
         font-size: 1rem;
@@ -443,6 +445,8 @@ img{
     }
 
     .check__Templates{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
         gap: .5rem;
         font-size: 1rem;
@@ -483,8 +487,8 @@ img{
     position: fixed;
     width: 30rem;
     height: 100%;
-    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 1)));
     background-image: -o-linear-gradient(bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);
+    background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(0, 0, 0, 1)), to(rgba(0, 0, 0, 1)));
     background-image: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 1) 100%);
     top: 0;
     right: 0;
@@ -568,9 +572,16 @@ img{
 
 .section__empleabilidad{
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-    flex-grow: 1;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
 }
 
 .empleabilidad__presentacion{
@@ -589,11 +600,19 @@ img{
 }
 
 .empleabilidad__cards{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
     gap:2rem;
-    flex-grow: 1;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
     width: 100%;
 }
 
@@ -604,7 +623,8 @@ img{
 }
 
 .card{
-    flex-basis: 30rem;
+    -ms-flex-preferred-size: 30rem;
+        flex-basis: 30rem;
     margin-bottom: 5rem;
 }
 
@@ -630,10 +650,19 @@ img{
     }
 
     .card{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
     }
 
     .card__paragraph{
@@ -651,12 +680,18 @@ img{
     }
 
     .empleabilidad__cards{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     .card{
-        flex-basis: 20rem;
+        -ms-flex-preferred-size: 20rem;
+            flex-basis: 20rem;
     }
 
     .card__paragraph{
@@ -688,15 +723,23 @@ img{
 
 .section__divesify{
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-grow: 1;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
     background-color: var(--color-primary);
     border-radius: 1rem;
 }
 
 .card__devesify{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    align-items: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
 }
 
 .devesify__text{
@@ -765,18 +808,32 @@ img{
 @media (max-width: 760px) { 
     
     .card__devesify{
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
     }
 
     .devesify__text{
         width: 100%;
         height: 30rem;
         padding: 0;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center;
+        -webkit-box-pack: center;
+            -ms-flex-pack: center;
+                justify-content: center;
         text-align: center;
     }   
 
