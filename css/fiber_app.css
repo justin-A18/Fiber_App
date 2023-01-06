@@ -429,9 +429,31 @@ img{
         margin-left: 5rem;
     }
 
+    .check__Credit{
+        display: flex;
+        gap: .8rem;
+        font-size: 1rem;
+        margin: 0;
+        padding: 0;
+    }
+
+    .check__Templates{
+        display: flex;
+        gap: .5rem;
+        font-size: 1rem;
+        margin: 0;
+        padding: 0;
+    }
+
     .link__examples{
         font-size: 1.3rem;
-        background-color: wheat;
+    }
+
+    .create__check{
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        gap: 1rem;
     }
 }
 
