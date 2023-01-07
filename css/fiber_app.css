@@ -542,6 +542,15 @@ img{
 
 .link__burger .link__principal{
     color: white;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    padding: 0 3rem;
+}
+
+.burger-logo{
+    color: white;
+    font-size: 4rem;
 }
 
 .link__burger .nav__cuenta a{
