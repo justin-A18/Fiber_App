@@ -586,7 +586,7 @@ img{
 
 .content-principal{
     width: 100%;
-    height: 40rem;
+    height: auto;
     padding: 0 10rem;
 }
 
@@ -654,7 +654,7 @@ img{
 
     .content-principal{
         width: 100%;
-        height: 40rem;
+        height: auto;
         padding: 0 5rem;
     }
 
@@ -898,6 +898,7 @@ img{
     padding: 1.5rem;
     flex-basis: 30rem;
     border: thin solid #aeaeae;
+    border-radius: .5rem;
 }
 
 .card__datos{
@@ -934,6 +935,12 @@ img{
     cursor: pointer;
     background-color: var(--color-primary);
     color: white;
+}
+
+.perfile__paragraph{
+    font-size: 1.4rem;
+    color: #393939;
+    line-height: 2rem;
 }
 
 @media (max-width: 1120px){
@@ -987,4 +994,111 @@ img{
     }
 }
 
+.footer{
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    align-items: center;
+    background-color: rgb(234, 234, 234);
+}
+
+.section__primary{
+    width: 40%;
+    padding: 0 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.footer__logo{
+    font-size: 2rem;
+    margin: 0;
+    font-weight: 700;
+    letter-spacing: .3rem;
+}
+
+.footer__description{
+    font-size: 1.5rem;
+    color: #535353;
+}
+
+.footer__netherlands{
+    font-size: 1.3rem;
+    color: #535353;
+}
+
+.section__secondary{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    flex-grow: 1;
+}
+
+.card-footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-card__title{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.footer-card__list{
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.list__link{
+    color: #535353;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+@media (max-width: 760px){
+    .footer{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 5rem;
+        background-color: rgb(234, 234, 234);
+    }
+
+    .section__primary{
+        width: 100%;
+        padding: 0 5rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+
+    .footer__description{
+        display: none;
+    }
+    
+    .footer__logo{
+        font-size: 3rem;
+    }
+
+    .section__secondary{
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        flex-grow: 1;
+        flex-wrap: wrap;
+    }
+    
+    .footer__netherlands{
+        font-size: 1.6rem;
+        color: #535353;
+    }
+}
 
