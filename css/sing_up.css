@@ -68,6 +68,16 @@ img{
     font-weight: bold;
     letter-spacing: .2rem;
 }
+
+.form__logo a{
+    text-decoration: none;
+    color: #000000;
+}
+
+.form__logo a:hover{
+    color: #444444;
+}
+
     /* form */
 
 .form__content{
